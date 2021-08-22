@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../normalize.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 1024px)">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,35 +13,27 @@
   <title>Frontend Mentor | Order summary card</title>
 </head>
 <body>
-
-  <main>
-    <article class="card-container">
-      <section class="image">
-        <img src="./images/illustration-hero.svg" alt="">
-      </section>
-      <section class="content">
-        <h2>Order Summary</h2>
-
-        <p>
-          You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!
-        </p>
-        <div class="card-plan">
-          <span></span>
-          <div class="plan">
-            <p class="plan-name">Annual Plan</p>
-            <p>$59.99/year</p>
-          </div>
-          <a href="#">Change</a>
+  <article class="card">
+    <header class="card__header">
+      <img src="./images/illustration-hero.svg" alt="portada">
+    </header>
+    <section class="card__body">
+      <h2>Order Summary</h2>
+      <p>You can now listen to millions of songs, audiobooks, and podcast on any device anywhere you like!</p>
+    </section>
+    <section class="card__plan">
+        <span class="card__plan--icon"></span>
+        <div>
+          <p><span>Annual Plan</span></p>
+          <p>$59.99/year</p>
         </div>
-        <div class="pay-confirmation">
-          Proceed to Payment
-        </div>
-        <a href="#" class="cancel-button">Cancel Order</a>
+        <a href="#">Change</a>
       </section>
-    </article>
-  </main>
-
+      <section class="card__buttons">
+        <a href="#" class="button__confirm">Proceed to Payment</a>
+        <a href="#" class="button__cancel">Cancel Order</a>
+      </section>
+  </article>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
