@@ -1,0 +1,7 @@
+
+	body{
+		background: var(--pale-blue) url("/challenge1/images/pattern-background-desktop.svg") no-repeat center;
+		background-size: cover;
+	}.card__plan a{
+		margin-left: 40px;
+	}

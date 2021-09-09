@@ -1,0 +1,121 @@
+/*
+1. Posicionamiento -->static, absolute, relative, fixed
+2. Modelo de caja (Box model) -->margin, border, padding, content
+3. Tipografía -->tipos, tamaños de fuente, etc
+4. Estilos visuales -->box-shadow, border-radius, gradient,etc
+5. Otros -->reglas CSS y más
+*/
+:root{
+  /*Colores*/
+	--pale-blue:hsl(225, 100%, 94%);
+	--bright-blue:hsl(245, 75%, 52%);
+	--very-pale-blue:hsl(225, 100%, 98%);
+	--desaturated-blue:hsl(224, 23%, 55%);
+	--dark-blue:hsl(223, 47%, 23%);
+}
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+	font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+}
+body{
+	background: var(--pale-blue) url("/challenge1/images/pattern-background-mobile.svg") no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.card{
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 400px;
+	background: #fff;
+	border-radius: 20px 20px 20px 20px;
+}
+.card__header img{
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+.card__body{
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 80%;
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+	color: var(--desaturated-blue);
+}
+.card__body h2{
+	font-size: 2.3rem;
+	font-weight: 900;
+	color: var(--dark-blue);
+}
+.card__plan{
+	display: flex;
+	/* justify-content: space-evenly; */
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 10px;
+	font-size: 1.6rem;
+	color: var(--desaturated-blue);
+	width: 85%;
+	background: var(--very-pale-blue);
+	border-radius: 10px;
+}
+.card__plan a{
+	text-decoration: none;
+	color: var(--bright-blue);
+}
+.card__plan a:hover{
+	color: hsl(256, 75%, 52%);
+}
+.card__plan div{
+	margin-right: 60px;
+	display: inline-block;
+	line-height: 5px;
+}
+.card__plan div span{
+	font-weight: 700;
+	color: var(--dark-blue);
+}
+.card__plan--icon{
+	margin-left: 5px;
+	margin-right: 10px;
+	background: url("/challenge1/images/icon-music.svg") no-repeat center;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+}
+.card__buttons{
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 0 auto;
+	width: 85%;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+.button__confirm{
+	line-height: 5rem;
+	color: #fff;
+	border-radius: 10px;
+	background: var(--bright-blue);
+	text-decoration: none;
+	box-shadow: 2px 15px 8px 2px var(--pale-blue);
+}
+.button__confirm:hover{
+	background: hsl(256, 75%, 52%);;
+}
+.button__cancel{
+	margin: 0 auto;
+	width: 40%;
+	padding-bottom: 30px;
+	color: var(--desaturated-blue);
+	text-decoration: none;
+}
+.button__cancel:hover{
+	color: var(--dark-blue);
+}

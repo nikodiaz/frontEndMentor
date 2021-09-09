@@ -1,0 +1,27 @@
+@media (min-width: 1000px){
+  .card{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+  }
+  header{
+    height: 450px;
+    border-radius: 0 5px 5px 0;
+    margin-left: 60px;
+  }
+  .card__img--container{
+    height: 100%;
+    background: url("/challenge2/images/image-header-desktop.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+  }
+  .card__main h1{
+    margin-bottom: 50px;
+  }
+  .card__footer{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
