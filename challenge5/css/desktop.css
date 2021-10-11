@@ -1,0 +1,90 @@
+:root{
+  --very-dark-desaturated-blue:hsl(238,29%,16%);
+  --soft-red:hsl(14,88%,65%);
+  --very-dark-grayish-blue:hsl(237,12%,33%);
+  --dark-grayish-blue:hsl(240,6%,50%);
+  /*Background Gradient*/
+  --soft-violet:hsl(273,75%,66%);
+  --soft-blue:hsl(240,73%,65%);
+  /*Dividers*/
+  --light-grayish-blue:hsl(240,5%,91%);
+}
+html{
+  font-size: 12px;
+  font-family: 'Kumbh Sans';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--soft-violet),var(--soft-blue));
+}
+.main__container{
+  display: flex;
+  padding: 30px;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+}
+.acordeon{
+  width: 60%;
+  margin-left: 70px;
+}
+.menu a{
+  display: inline-block;
+  width: 90%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+  text-decoration: none;
+  border-bottom: 1px solid var(--light-grayish-blue);
+}
+.menu a:active{
+  color: var(--very-dark-desaturated-blue);
+}
+.menu p{
+  overflow: hidden;
+  max-height: 0;
+  color: var(--dark-grayish-blue);
+  text-align: justify;
+  transition: all .2s ease-in-out;
+}
+.menu:target p{
+  max-height: 100px;
+  padding: 10px;
+}
+.menu span{
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: url("/challenge5/images/icon-arrow-down.svg") no-repeat center/cover;
+}
+.menu span:active{
+  transform: rotate(180deg);
+}
+.img__container{
+  position: relative;
+  width: 40%;
+}
+.img__container img{
+  position: absolute;
+}
+.img__woman{
+  top: 75px;
+  left: -100px;
+  width: 400px;
+  z-index: 2;
+}
+.img__pattern{
+  top: -15px;
+  left: -200px;
+  width: 500px;
+  z-index: 1;
+}
+.img__box{
+  top: 140px;
+  left: -105px;
+  max-width: 150px;
+  z-index: 2;
+}

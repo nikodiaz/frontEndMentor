@@ -1,0 +1,35 @@
+@media (max-width:750px){
+  body{
+    height: auto;
+    padding: 200px;
+  }
+  .main__container{
+    flex-direction: column;
+    width: 360px;
+    padding: 7px;
+  }
+  .img__container{
+    width: 360px;
+    height: 100%;
+  }
+  .img__woman{
+    top: -160px;
+    left: 25px;
+    width: 300px;
+  }
+  .img__box{
+    top: -75px;
+    left: 20px;
+    max-width: 110px;
+  }
+  .img__pattern{
+    top: -180px;
+    left: 25px;
+    width: 300px;
+  }
+  .acordeon{
+    margin-top: 150px;
+    margin-left: 0;
+    width: 360px;
+  }
+}
