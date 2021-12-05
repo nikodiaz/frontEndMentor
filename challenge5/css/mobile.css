@@ -7,18 +7,22 @@
     flex-direction: column;
     width: 360px;
     padding: 7px;
+    background-image: url(/challenge5/images/bg-pattern-mobile.svg);
+    background-position: 40% 0;
+    background-size: 80%;
+    background-repeat: no-repeat;
   }
   .img__container{
     width: 360px;
     height: 100%;
   }
   .img__woman{
-    top: -160px;
+    top: -142px;
     left: 25px;
     width: 300px;
   }
   .img__box{
-    top: -75px;
+    top: -55px;
     left: 20px;
     max-width: 110px;
   }

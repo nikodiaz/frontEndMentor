@@ -24,6 +24,10 @@ body{
   display: flex;
   padding: 30px;
   background-color: #f1f1f1;
+  background-image: url(/challenge5/images/bg-pattern-desktop.svg);
+  background-position: -20% 200%;
+  background-size: 50%;
+  background-repeat: no-repeat;
   border-radius: 25px;
 }
 .acordeon{
